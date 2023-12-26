@@ -80,7 +80,7 @@ var char2kr = {
 	mass_media: "언론사",
 	commentator: "해설자",
 	advertiser: "광고주",
-	coverment: "정부",
+	government: "정부",
 	fake_commentator: "해설자?",
 	public: "대중",
 }
@@ -153,7 +153,7 @@ var dialog = [
 	[character.advertiser," 아니면.."],
 	[character.vested, "어쩌면.."],
 	[character.government, "애초부터.."],
-	[character.fake_commentator, "------"],
+	[character.fake_commentator, "저도 한 패 였을까요?"],
 
 	[character.commentator, "플레이 해 주셔서 감사합니다!"],
 	"해당 게임은 유튜브의 Noam Chomsky - The 5 Filters of the Mass Media Machine 를 크게 참고했습니다.",
