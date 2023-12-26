@@ -172,6 +172,7 @@ var dialog = [
 	"error",
 	"error",
 	"error",
+	"[Object object]",
 	"와, 독하시네요. 정말 끝입니다!",
 	"메롱",
 ];
