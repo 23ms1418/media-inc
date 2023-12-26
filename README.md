@@ -1,2 +1,2 @@
 # orAmI
-i hate school
+btw i hate school

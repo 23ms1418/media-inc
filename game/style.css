@@ -9,40 +9,85 @@ html, body {
 
 body {
 	display: flex;
-	flex-direction: column;
-}
-
-body > * {
-	width: 100%;
-}
-
-#text {
-	height: 300px;
-	display: flex;
-	align-items: center;
 	justify-content: center;
-	font-size: 30px;
-	font-weight: 700;
-	user-select: none;
+	background-color: black;
+	overflow-y: hidden;
+}
+
+#area {
+	width: 800px;
+	height: 100%;
+	background-color: #efefef;
 }
 
 #container {
-	height: 500px;
+	width: 100%;
+	height: calc(100% - 350px);
+	background-color: white;
+	position: relative;
 	display: flex;
-	align-items: center;
-	justify-content: space-evenly;
 	user-select: none;
+	flex-direction: column;
+	padding-top: 10px;
+	overflow-y: auto;
+	margin-bottom: 300px;
 }
 
-.card {
-	height: 400px;
-	width: 250px;
-	background-color: black;
-	color: white;
-	border-radius: 10px;
+#container::-webkit-scrollbar {
+    display: none;
+}
+
+.chat {
+	position: relative;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	font-size: 25px;
-	font-weight: 600;
+	margin: 14px 20px;
+	width: 100%;
+}
+
+.chat > .tail {
+	width: 20px;
+	height: 20px;
+}
+
+.chat-others > .tail {
+	background: linear-gradient(225deg, black 0%, black 50%, transparent 50%, transparent);
+	position: absolute;
+	left: -12px;
+	top: 0;
+}
+
+.chat > .author {
+	position: absolute;
+	min-width: 50px;
+	height: 20px;
+	top: -22px;
+	left: 0;
+	color: black;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.chat > .textarea {
+	position: relative;
+	border-radius: 5px;
+}
+
+.chat > .textarea {
+	max-width: 65%;
+	padding: 8px 12px;
+}
+
+.chat-others > .textarea {
+	background-color: black;
+	color: white;
+}
+
+.commentator > .textarea {
+	background-color: #623afa;
+}
+
+.commentator > .tail {
+	background: linear-gradient(225deg, #623afa 0%, #623afa 50%, transparent 50%, transparent);
 }
