@@ -8,6 +8,10 @@ document.addEventListener("keypress", (e) => {
 	}
 });
 
+document.addEventListener("click", (e) => {
+	next();
+})
+
 chatIndex = 0;
 
 function next() {
